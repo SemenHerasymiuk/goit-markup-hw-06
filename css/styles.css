@@ -61,12 +61,6 @@ ul {
   margin-bottom: 8px;
 }
 
-.text-sections {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -216,13 +210,13 @@ ul {
 
 .header-menu-contacts {
   font-style: normal;
+  margin-bottom: 48px;
 }
 
 .header-menu-contacts-items {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 48px;
 }
 
 .header-menu-contacts-link {
@@ -233,6 +227,14 @@ ul {
   letter-spacing: 0.02em;
   color: #434455;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-contact-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: #404bbf;
 }
 
 .header-menu-contacts-link:hover,
@@ -305,12 +307,12 @@ ul {
 
 .title-section-subject {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
-  max-width: 318px;
+  max-width: 216px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -329,7 +331,7 @@ ul {
   min-width: 169px;
   height: 56px;
   border-radius: 4px;
-  margin-top: 48px;
+  margin-top: 72px;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -339,6 +341,13 @@ ul {
 .title-section-btn:hover,
 .title-section-btn:focus {
   background-color: #404bbf;
+}
+
+.text-sections {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* ======================================= */
@@ -379,6 +388,10 @@ ul {
 /* ==== TEAM section == 3rd section ==== */
 /* ===================================== */
 
+.team-wrapper {
+  padding: 0 27px;
+}
+
 .team-section {
   background-color: #f4f4fd;
   padding: 96px 0;
@@ -388,7 +401,6 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 72px;
-  padding: 0 12px;
 }
 
 .team-item {
@@ -529,7 +541,10 @@ ul {
   color: #f4f4fd;
 }
 
-.footer-text {
+.text-sections-footer-text {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
   color: #f4f4fd;
 }
 
@@ -978,7 +993,16 @@ ul {
   }
 
   .title-section-subject {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
     max-width: 496px;
+  }
+
+  .title-section-btn {
+    margin-top: 36px;
   }
 
   /* ======================================= */
@@ -1004,12 +1028,15 @@ ul {
   /* ==== TEAM section == 3rd section ==== */
   /* ===================================== */
 
+  .team-wrapper {
+    padding: 0 107px;
+  }
+
   .team-list {
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 64px;
     column-gap: 24px;
-    padding: 0 93px;
   }
 
   .team-item {
@@ -1037,6 +1064,7 @@ ul {
   .footer-inner {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: baseline;
     padding: 0 120px;
     column-gap: 24px;
     row-gap: 72px;
@@ -1057,7 +1085,7 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 208px;
-    margin-bottom: auto;
+    margin-bottom: 0;
   }
 
   .footer-subscribe-form {
@@ -1086,6 +1114,7 @@ ul {
   .modal {
     width: 408px;
     min-height: 584px;
+    padding: 72px 24px 24px 24px;
   }
 }
 
@@ -1111,6 +1140,14 @@ ul {
 /* ======================= */
 
 @media screen and (min-width: 1158px) {
+  /* ======================= */
+  /* ==== COMMON styles ==== */
+  /* ======================= */
+
+  .studio-item p {
+    font-weight: 400;
+  }
+
   .wrapper {
     max-width: 1158px;
   }
@@ -1155,6 +1192,9 @@ ul {
       url("../images/people-office-pc.jpg");
   }
 
+  .title-section-btn {
+    margin-top: 48px;
+  }
   /* ======================================= */
   /* ==== STUDIO section == 2nd section ==== */
   /* ======================================= */
@@ -1191,6 +1231,10 @@ ul {
 
   .team-section {
     padding: 120px 0;
+  }
+
+  .team-wrapper {
+    padding: 0 15px;
   }
 
   .team-list {
